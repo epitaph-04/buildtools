@@ -4,9 +4,13 @@ RUN apt update && apt install -y \
     curl \
     jq \
     tar \
-    libcurl3 \
-    libcurl3-openssl-dev \
     ca-certificates
+    libssl-dev \
+    libghc-zlib-dev \
+    libcurl4-gnutls-dev \
+    libexpat1-dev \
+    gettext \
+    unzip
 
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
 
