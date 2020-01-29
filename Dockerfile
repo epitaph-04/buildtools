@@ -4,7 +4,8 @@ RUN apt update && apt install -y \
     curl \
     jq \
     tar \
-    libcurl3 \
+    libcurl4 \
+    libcurl4-openssl-dev \
     ca-certificates
 
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
