@@ -3,7 +3,8 @@ FROM ubuntu:latest
 RUN apt update && apt install -y \
     curl \
     jq \
-	tar \
+    tar \
+    libcurl3 \
     ca-certificates
 
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
